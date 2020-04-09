@@ -1,4 +1,4 @@
-// Con este codigo tomo los meta-datos de los valores en el boton 
+// Con este codigo tomo los meta-datos de los valores en el boton al dar clik
 
 const tecla = document.getElementsByClassName('tecla');
 for (let i = 0; i < tecla.length; i++) {
