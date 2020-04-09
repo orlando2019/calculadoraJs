@@ -8,9 +8,9 @@ for (let i = 0; i < tecla.length; i++) {
       const t = e.target,
             d = t.dataset;
       //Detecta si se pulsa un numero      
-      if (d.numero) writeScreen(d.numero)
+      if (d.numero) writeScreen(d.numero) // Ok
       //detecta si se pulsa una operacion matematica
-      if (d.matematica) //getOperatio()
+      if (d.matematica) getOperation(t, d.matematica) //ok
       //Detecta si se pulsa un aoperacion de igual o limpiar
       if (d.operacion); //runOperation()
     });
@@ -19,11 +19,23 @@ for (let i = 0; i < tecla.length; i++) {
 }
 
 //Con esta funcion concatenamos los numeros que pulsamos
+//const actual = document.getElementsByClassName('pantalla');
 
 const writeScreen = numero => {
-    let actual = document.getElementById('pantalla').innerHTML;
-    let numeroN = document.getElementById('pantalla').innerHTML =numero;
-    document.getElementById('pantalla').innerHTML = actual + numeroN
+    let actual = document.getElementById('pantalla').textContent;
+    let numeroN = document.getElementById('pantalla').textContent = numero;
+    document.getElementById('pantalla').textContent = actual + numeroN
 }
+
+
+const getOperation = (elemento, matematica) => {
+    let numero1 = document.getElementById('pantalla').textContent
+    console.log(numero1)
+    let tipoOperacion = matematica
+    let numeroN =document.getElementById('pantalla').textContent = elemento;
+    document.getElementById('pantalla').textContent = numeroN.textContent
+    return(numero1, tipoOperacion )
+}
+
 
 
