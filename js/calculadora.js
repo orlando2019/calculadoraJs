@@ -1,10 +1,16 @@
 //Creo la funcion para tomar los datos del boton al dar click
 const teclas = document.getElementById('teclas'),
-      pantallas = document.getElementById('pantalla') 
+      pantallas = document.getElementById('pantalla')
+
+const noTruncarDecimales = {
+  maximumFractionDigits: 20,
+};
       
 let operacionEstado = false,
     numero1,
-    tipoOperacion
+    tipoOperacion,
+    puntos
+
 
 const calculadora = () => {
     if(!teclas) return
