@@ -14,46 +14,50 @@
       </button>
 
     </nav>
-    <div>
-          
+             
       <div class="calculadora">
-            <div id="pantalla"></div>
+            <div id="pantalla" class="pantallas">0</div>
 
-          <div id="teclas">
-            <div>
-              <button id="tecla6" type="button" class="btn btn-outline-primary tecla" data-numero="1">1</button>
-              <button id="tecla7" type="button" class="btn btn-outline-primary tecla" data-numero="2">2</button>
-              <button id="tecla8" type="button" class="btn btn-outline-primary tecla" data-numero="3">3</button>
+          <div id="teclas" class="teclas">
+
+            <div class="numeros">
+              <div class="teclas3">
+              <button id="tecla12" type="button" class="btn btn-outline-primary " data-numero="7">7</button>
+              <button id="tecla13" type="button" class="btn btn-outline-primary " data-numero="8">8</button>
+              <button id="tecla14" type="button" class="btn btn-outline-primary " data-numero="9">9</button>
             </div>
-            <div>
+
+            <div class="teclas2" >
               <button id="tecla9" type="button" class="btn btn-outline-primary tecla" data-numero="4">4</button>
               <button id="tecla10" type="button" class="btn btn-outline-primary tecla" data-numero="5">5</button>
               <button id="tecla11" type="button" class="btn btn-outline-primary tecla" data-numero="6">6</button>
             </div>
-            <div>
-              <button id="tecla12" type="button" class="btn btn-outline-primary tecla" data-numero="7">7</button>
-              <button id="tecla13" type="button" class="btn btn-outline-primary tecla" data-numero="8">8</button>
-              <button id="tecla14" type="button" class="btn btn-outline-primary tecla" data-numero="9">9</button>
+
+            <div class="teclas1">
+              <button id="tecla6" type="button" class="btn btn-outline-primary tecla" data-numero="1">1</button>
+              <button id="tecla7" type="button" class="btn btn-outline-primary tecla" data-numero="2">2</button>
+              <button id="tecla8" type="button" class="btn btn-outline-primary tecla" data-numero="3">3</button>
             </div>
-            <div>
-              <button id="tecla15" type="button" class="btn btn-outline-primary tecla" data-numero="0">0</button>
-            </div>
-            <div>
+          </div>              
+            
+            <div class="ope">
+              <button id="tecla4" type="button" class="btn btn-outline-primary" data-operacion="limpiar">C</button>
+              <button id="tecla15" type="button" class="btn btn-outline-primary" data-numero="0">0</button>
+              <button id="tecla5" type="button" class="btn btn-outline-primary" data-operacion="igual">=</button>
+            </div>  
+
+            <div class="op">
                 <button id="tecla" type="button" class="btn btn-outline-primary tecla" data-matematica="suma">+</button>
                 <button id="tecla1" type="button" class="btn btn-outline-primary tecla" data-matematica="resta">-</button>
                 <button id="tecla2" type="button" class="btn btn-outline-primary tecla" data-matematica="multi">x</button>
                 <button id="tecla3" type="button" class="btn btn-outline-primary tecla" data-matematica="divide">/</button>
             </div>
-            <div>
-              <button id="tecla4" type="button" class="btn btn-outline-primary tecla" data-operacion="limpiar">C</button>
-              <button id="tecla5" type="button" class="btn btn-outline-primary tecla" data-operacion="igual">=</button>
-            </div>
-          </div>  
+
+          
+        </div>
       </div>
   
     
-    </div>
-
     <script src="js/calculadora.js"></script>
   </body>
 </html>
